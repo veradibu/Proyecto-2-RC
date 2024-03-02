@@ -1,4 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+
 * {
   margin: 0;
   padding: 0;
+}
+
+body {
+  background: linear-gradient(to left, transparent, 20%, rgb(0, 0, 0)),
+    linear-gradient(to right, transparent, 80%, rgb(0, 0, 0)),
+    url("../img/heropage.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.iniciar-sesion {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  border-radius: 5px;
+  padding: 10px;
+  margin-right: 20px;
+}
+
+.iniciar-sesion:hover {
+  color: white;
+  background-color: #315f87;
+}
+
+.registrate-ahora {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.registrate-ahora:hover {
+  color: white;
+  background-color: #315f87;
+}
+
+h1 {
+  padding-left: 120px;
+  padding-right: 120px;
+  padding-top: 80px;
+  font-family: "Abril Fatface", serif;
+  color: white;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 500;
+}
+
+h2 {
+  font-family: "Lato", serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.title {
+  margin-top: 150px;
+}
+
+.color-celeste {
+  color: #0088ff;
+}
+
+.color-amarillo {
+  color: #f6b50e;
+}
+
+.boton-registrate {
+  font-family: "Lato", serif;
+  text-decoration: none;
+  color: white;
+  background-color: #0088ff;
+  padding: 10px 25px 10px 25px;
+  font-weight: 700;
+  font-size: 15px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.boton-registrate:hover {
+  transform: scale(1.1);
 }
