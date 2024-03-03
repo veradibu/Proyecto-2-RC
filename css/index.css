@@ -43,7 +43,7 @@ body {
   background-color: #315f87;
 }
 
-h1 {
+.title-1 {
   padding-left: 120px;
   padding-right: 120px;
   padding-top: 80px;
@@ -54,7 +54,7 @@ h1 {
   font-weight: 500;
 }
 
-h2 {
+.title-2 {
   font-family: "Lato", serif;
   color: rgb(255, 255, 255);
   text-align: center;
@@ -88,4 +88,53 @@ h2 {
 
 .boton-registrate:hover {
   transform: scale(1.1);
+}
+
+.navbar-toggler {
+  background-color: white;
+}
+
+@media (max-width: 600px) {
+  body {
+    background: linear-gradient(to bottom, transparent 20%, rgb(0, 0, 0) 80%),
+      linear-gradient(to top, transparent 20%, rgb(0, 0, 0) 100%),
+      url("../img/heropage.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .title-1 {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+  }
+
+  .title-2 {
+    margin-top: 50px;
+    font-size: 20px;
+  }
+
+  .title {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 993px) and (min-width: 601px) {
+  .title-1 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+  }
+
+  .title-2 {
+    margin-top: 30px;
+    font-size: 25px;
+  }
 }
