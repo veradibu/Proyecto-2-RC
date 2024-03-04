@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rozha+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+}
+
+.header {
+  background-image: transparent;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+.home {
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 2px;
+}
+
+.home:hover {
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+.itmovie {
+  height: 750px;
+}
+
+.descripcion-promocion {
+  position: absolute;
+  bottom: 135px;
+  left: 20px;
+  color: white;
+  z-index: 10;
+  padding: 20px;
+}
+
+.description-h3 {
+  font-size: 20px;
+  color: gray;
+}
+
+.boton-reproducir {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  background-color: transparent;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.247);
+  background-color: rgba(255, 255, 255, 0.224);
+  margin-top: 15px;
+  border: 1px solid rgb(0, 0, 0);
+  max-width: 180px;
+}
+
+.boton-reproducir img {
+  margin-right: 5px;
+}
+
+.boton-reproducir a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.boton-reproducir:hover {
+  background-color: rgba(255, 255, 255, 0.393);
+}
+
+.solo-para-ti-h2 {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: white;
+}
+
+.container {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.card {
+  width: 225px;
+  border: none;
+  border-radius: 0%;
+}
+
+.img-para-ti {
+  border-radius: none;
+}
+
+.columnas-solo-para-ti {
+  margin-right: 10px;
+}
+
+@media (max-width: 991px) {
+  .video-promocion {
+    display: none;
+  }
+
+  .descripcion-promocion {
+    display: none;
+  }
+
+  body {
+    background-color: black;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1030px) {
+  .home {
+    font-size: 15px;
+  }
+
+  .description-h3 {
+    font-size: 15px;
+  }
+  .descripcion-promocion {
+    position: absolute;
+    bottom: 220px;
+    left: 20px;
+    color: white;
+    z-index: 10;
+    padding: 20px;
+  }
+}
+
+@media (min-width: 1030px) and (max-width: 1073px) {
+  .description-h3 {
+    font-size: 15px;
+  }
+  .descripcion-promocion {
+    position: absolute;
+    bottom: 220px;
+    left: 20px;
+    color: white;
+    z-index: 10;
+    padding: 10px;
+  }
+}
