@@ -1,0 +1,21 @@
+.contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .contacto2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .imagen{
+    margin-top: 50px;
+  
+  }
+  
+  iframe{
+    margin-left: 10px;
+  }
