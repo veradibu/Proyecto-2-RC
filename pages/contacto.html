@@ -16,7 +16,7 @@
       content="peliculas, series, cine, historias, aventura, accion, ciencia ficcion"
     />
     <link rel="stylesheet" href="login.css">
-    <link rel="stylesheet" href="./css/contacto.css">
+    <link rel="stylesheet" href="../css/contacto.css">
    
     <title>CineGo</title>
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
@@ -27,38 +27,38 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
+  <body class="bg-black">
     <header></header>
     <main>
-        <div class="container-fluid p-0">
+        <div class="container-fluid bg-black p-0">
 
-            <img src="./img/contacto/contacto.jpg" alt="contacto" class="d-grid w-100 img-fluid imagen"/>
+            <img src="../img/contacto/contacto.jpg" alt="contacto" class="d-grid w-100 img-fluid imagen"/>
   
         </div>
   
          
-        <div class="container-fluid col-sm-12 col-lg-6 p-2">
+        <div class="container-fluid bg-secondary col-lg-6 p-2">
             <div class="rounded p-4 fondo2 ms-2 me-2 mt-5">
 
               <div>
-                <h5 class="fuente d-md-flex text-center justify-content-md-center">
+                <h5 class="fuente d-md-flex text-center justify-content-md-center text-white ">
                     SI NECESITA INFORMACION, POR FAVOR PÓNGASE EN CONTACTO CON NOSOTROS A TRAVES DEL
                     SIGUIENTE FORMULARIO.</h5>
               </div><br><br>
               
               <form class="negrita">
                 <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Correo Electronico</label>
+                  <label for="exampleInputEmail1" class="form-label text-white">Correo Electronico</label>
                   <input type="email" id="txt_email" class="form-control" placeholder="nombre@dominio.com" required="True"
                     aria-describedby="emailHelp" maxlength="50" />
                 </div><br><br>
               
   
                 <div class="mb-3">
-                <label for="txt_comentario" class="form-label">¿En que te podemos ayudar?:</label>
+                <label for="txt_comentario" class="form-label text-white">¿En que te podemos ayudar?:</label>
                 <textarea id="txt_comentario" class="form-control" required="True" maxlength="250"
                   placeholder="Escriba su consulta" aria-describedby="comentHelp"></textarea>
-                <div id="comentHelp" class="form-text">
+                <div id="comentHelp" class="form-text text-white">
                   Escribir hasta 250 caracteres
                 </div>
               </div><br><br>
