@@ -4,6 +4,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -79,7 +80,7 @@ body {
   background-color: rgba(255, 255, 255, 0.393);
 }
 
-.solo-para-ti-h2 {
+.categorias-h2 {
   font-family: "Lato", sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -102,7 +103,7 @@ body {
 }
 
 .columnas-solo-para-ti {
-  margin-right: 10px;
+  margin-right: 25px;
 }
 
 @media (max-width: 991px) {
