@@ -41,7 +41,7 @@ window.addEventListener("scroll", function () {
     {
       id: 6,
       nombre: "La Mujer Rey",
-      categoria: "Recien añadidos",
+      categoria: "Solo para ti",
       image: "../img/lamujerrey.png",
     },
     {
@@ -70,63 +70,87 @@ window.addEventListener("scroll", function () {
     },
     {
       id: 11,
+      nombre: "Sex and the city 2",
+      categoria: "Recien añadidos",
+      image: "../img/sexandthecity2.png",
+    },
+    {
+      id: 12,
+      nombre: "Alf",
+      categoria: "Recien añadidos",
+      image: "../img/alf.png",
+    },
+    {
+      id: 13,
       nombre: "Harry Potter y la piedra filosofal",
       categoria: "Bienvenido al Mundo Magico",
       image: "../img/harrypotter1.png",
     },
     {
-      id: 12,
+      id: 14,
       nombre: "Harry Potter y la cámara secreta",
       categoria: "Bienvenido al Mundo Magico",
       image: "../img/harrypotter2.png",
     },
     {
-      id: 13,
+      id: 15,
       nombre: "Harry Potter y el prisionero de azkaban",
       categoria: "Bienvenido al Mundo Magico",
       image: "../img/harrypotter3.png",
     },
     {
-      id: 14,
+      id: 16,
       nombre: "Harry Potter y el cáliz de fuego",
       categoria: "Bienvenido al Mundo Magico",
       image: "../img/harrypotter4.png",
     },
     {
-      id: 15,
+      id: 17,
       nombre: "Harry Potter y la orden del fénix",
       categoria: "Bienvenido al Mundo Magico",
       image: "../img/harrypotter5.png",
     },
     {
-      id: 16,
+      id: 18,
+      nombre: "Harry Potter y la el misterio del principe",
+      categoria: "Bienvenido al Mundo Magico",
+      image: "../img/harrypotter6.png",
+    },
+    {
+      id: 19,
       nombre: "Elijo creer",
       categoria: "Populares en CineGO",
       image: "../img/elijocreer.png",
     },
     {
-      id: 17,
+      id: 20,
       nombre: "Floricienta",
       categoria: "Populares en CineGO",
       image: "../img/floricienta.png",
     },
     {
-      id: 18,
+      id: 21,
       nombre: "Relatos salvajes",
       categoria: "Populares en CineGO",
       image: "../img/relatosalvajes.png",
     },
     {
-      id: 19,
+      id: 22,
       nombre: "La hija de Dios",
       categoria: "Populares en CineGO",
       image: "../img/lahijadedios.png",
     },
     {
-      id: 20,
+      id: 23,
       nombre: "Un gallo para esculapio",
       categoria: "Populares en CineGO",
       image: "../img/ungalloparaesculapio.png",
+    },
+    {
+      id: 23,
+      nombre: "Signos",
+      categoria: "Populares en CineGO",
+      image: "../img/signos.png",
     },
   ];
 
@@ -149,7 +173,7 @@ window.addEventListener("scroll", function () {
   soloParaTi.innerHTML = pelisCategoriaSoloparati
     .map(
       (pelicula) => `
-  <div class='col-12 col-md-12 col-lg-2 py-3 columnas-categorias'>
+  <div class='col-4 col-md-4 col-lg-2 py-3 columnas-categorias'>
     <div class="card">
     <a href=""><img src="${pelicula.image}" class="card img-para-ti" alt="..."></a>  
     </div>
@@ -161,7 +185,7 @@ window.addEventListener("scroll", function () {
   recienAniadidos.innerHTML = pelisCategoriaRecienAnadidos
     .map(
       (pelicula) => `
-  <div class='col-12 col-md-6 col-lg-2 py-3 columnas-categorias'>
+  <div class='col-4 col-md-4 col-lg-2 py-3 columnas-categorias'>
     <div class="card">
     <a href=""><img src="${pelicula.image}" class="card img-para-ti" alt="..."></a>  
     </div>
@@ -173,7 +197,7 @@ window.addEventListener("scroll", function () {
   mundoMagico.innerHTML = pelisCategoriaMundoMagico
     .map(
       (pelicula) => `
-  <div class='col-12 col-md-6 col-lg-2 py-3 columnas-categorias'>
+  <div class='col-4 col-md-4 col-lg-2 py-3 columnas-categorias'>
     <div class="card">
     <a href=""><img src="${pelicula.image}" class="card img-para-ti" alt="..."></a>  
     </div>
@@ -185,7 +209,7 @@ window.addEventListener("scroll", function () {
   populares.innerHTML = pelisCategoriaPopulares
     .map(
       (pelicula) => `
-  <div class='col-12 col-md-6 col-lg-2 py-3 columnas-categorias'>
+  <div class='col-4 col-md-4 col-lg-2 py-3 columnas-categorias'>
     <div class="card">
     <a href=""><img src="${pelicula.image}" class="card img-para-ti" alt="..."></a>  
     </div>
