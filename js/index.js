@@ -234,4 +234,12 @@
   if (!peliculasLocalStorage.length) {
     localStorage.setItem("peliculas", JSON.stringify(peliculas));
   }
+
+  const admin = {
+    userName: "usuario2024",
+    pass: "123456789",
+    role: "superAdmin",
+  };
+
+  localStorage.setItem("admin", JSON.stringify(admin));
 })();
