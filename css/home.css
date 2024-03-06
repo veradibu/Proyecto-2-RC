@@ -16,7 +16,6 @@ body {
 }
 
 .navbar {
-  position: fixed;
   width: 100%;
   z-index: 10;
 }
@@ -39,17 +38,21 @@ body {
   height: 750px;
 }
 
+.pelicula-promocion {
+  position: relative;
+}
+
 .descripcion-promocion {
   position: absolute;
-  bottom: 135px;
-  left: 20px;
+  bottom: 1vh;
+  left: 4vw;
   color: white;
   z-index: 10;
-  padding: 20px;
+  /*   padding: 20px; */
 }
 
 .description-h3 {
-  font-size: 20px;
+  font-size: 1.3vw;
   color: gray;
 }
 
@@ -88,12 +91,11 @@ body {
 }
 
 .container {
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-top: 8vw;
 }
 
 .card {
-  width: 225px;
+  width: 15vw;
   border: none;
   border-radius: 0%;
 }
@@ -102,8 +104,9 @@ body {
   border-radius: none;
 }
 
-.columnas-solo-para-ti {
-  margin-right: 25px;
+.columnas-categorias {
+  margin-right: 1vw;
+  width: 15vw;
 }
 
 @media (max-width: 991px) {
@@ -118,6 +121,10 @@ body {
   body {
     background-color: black;
   }
+
+  .navbar {
+    background-color: black;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1030px) {
@@ -128,26 +135,10 @@ body {
   .description-h3 {
     font-size: 15px;
   }
-  .descripcion-promocion {
-    position: absolute;
-    bottom: 220px;
-    left: 20px;
-    color: white;
-    z-index: 10;
-    padding: 20px;
-  }
 }
 
 @media (min-width: 1030px) and (max-width: 1073px) {
   .description-h3 {
     font-size: 15px;
-  }
-  .descripcion-promocion {
-    position: absolute;
-    bottom: 220px;
-    left: 20px;
-    color: white;
-    z-index: 10;
-    padding: 10px;
   }
 }
