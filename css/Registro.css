@@ -3,7 +3,9 @@
   padding: 0;
 }
 body{
-  background-color: black;
+  
+  background-image:linear-gradient(to left, transparent, 20%, rgb(0, 0, 0)),
+  linear-gradient(to right, transparent, 80%, rgb(0, 0, 0)), url(../img/heropage.jpg)
   
 }
 .input-tamaño{
@@ -16,9 +18,33 @@ body{
 }
 
 .box{
-  background-color: gray;
+  background-color: rgba(39, 36, 36, 0.5);
   width: 1000px;
-  margin:  5px;
-  flex-direction: column;
-  
+  overflow-x: hidden;
+  margin-top: 300px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
+.container {
+  max-width: 100%;
+}
+
+.form-container {
+  max-width: 400px;
+}
+
+.logo {
+  max-width: 250px;
+  max-height: 250px;
+}
+
+@media (max-width: 767px) {
+  .form-container {
+      width: 100%;
+  }
+
+  .logo {
+      display: none;
+  }
+  }
