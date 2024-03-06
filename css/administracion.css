@@ -4,5 +4,51 @@
 }
 
 body {
-  background-color: #000000;
+  background-image: linear-gradient(to left, transparent, 20%, rgb(0, 0, 0)),
+    linear-gradient(to right, transparent, 80%, rgb(0, 0, 0)),
+    url(../img/heropage.jpg);
+}
+.header {
+  background-image: transparent;
+  margin: 150px;
+}
+
+.aps {
+  margin-left: 1100px;
+}
+
+.navbar {
+  width: 100%;
+  z-index: 10;
+}
+
+.tabla {
+  background-color: yellow;
+}
+.home {
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 2px;
+}
+
+.home:hover {
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+@media (max-width: 991px) {
+  .navbar {
+    background-color: black;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .aps.btn-outline-light {
+    font-size: 14px;
+    padding: 8px 16px;
+    margin: 10px 0;
+  }
 }
