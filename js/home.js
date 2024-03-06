@@ -147,7 +147,7 @@ window.addEventListener("scroll", function () {
       image: "../img/ungalloparaesculapio.png",
     },
     {
-      id: 23,
+      id: 24,
       nombre: "Signos",
       categoria: "Populares en CineGO",
       image: "../img/signos.png",
@@ -173,9 +173,9 @@ window.addEventListener("scroll", function () {
   soloParaTi.innerHTML = pelisCategoriaSoloparati
     .map(
       (pelicula) => `
-  <div class='col-4 col-md-4 col-lg-2 py-3 columnas-categorias'>
+  <div class='col-4 col-md-4 col-lg-2 py-3'>
     <div class="card">
-    <a href=""><img src="${pelicula.image}" class="card img-para-ti" alt="..."></a>  
+      <a href=""><img src="${pelicula.image}" class="card img-para-ti" alt="..."></a>  
     </div>
   </div>
 `
@@ -185,9 +185,9 @@ window.addEventListener("scroll", function () {
   recienAniadidos.innerHTML = pelisCategoriaRecienAnadidos
     .map(
       (pelicula) => `
-  <div class='col-4 col-md-4 col-lg-2 py-3 columnas-categorias'>
+  <div class='col-4 col-md-4 col-lg-2 py-3'>
     <div class="card">
-    <a href=""><img src="${pelicula.image}" class="card img-para-ti" alt="..."></a>  
+      <a href=""><img src="${pelicula.image}" class="card img-para-ti" alt="..."></a>  
     </div>
   </div>
 `
@@ -197,9 +197,9 @@ window.addEventListener("scroll", function () {
   mundoMagico.innerHTML = pelisCategoriaMundoMagico
     .map(
       (pelicula) => `
-  <div class='col-4 col-md-4 col-lg-2 py-3 columnas-categorias'>
+  <div class='col-4 col-md-4 col-lg-2 py-3'>
     <div class="card">
-    <a href=""><img src="${pelicula.image}" class="card img-para-ti" alt="..."></a>  
+      <a href=""><img src="${pelicula.image}" class="card img-para-ti" alt="..."></a>  
     </div>
   </div>
 `
@@ -209,9 +209,9 @@ window.addEventListener("scroll", function () {
   populares.innerHTML = pelisCategoriaPopulares
     .map(
       (pelicula) => `
-  <div class='col-4 col-md-4 col-lg-2 py-3 columnas-categorias'>
+  <div class='col-4 col-md-4 col-lg-2 py-3'>
     <div class="card">
-    <a href=""><img src="${pelicula.image}" class="card img-para-ti" alt="..."></a>  
+      <a href=""><img src="${pelicula.image}" class="card img-para-ti" alt="..."></a>  
     </div>
   </div>
 `
