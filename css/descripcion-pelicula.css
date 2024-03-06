@@ -70,6 +70,22 @@ h2 {
 .box-1:nth-child(4){
     display: inline-block;
 }
+.load-more{
+    margin-top: 40px;
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 15px;
+    border:1px solid blue;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-right: 5%;
+
+}
+.load-more:hover {
+    color: blue;
+}
 
 .content img{
     width: 100%;
@@ -89,6 +105,10 @@ h2 {
    
     .movies{
         padding: 30px 70px;
+    }
+    .load-more{
+        margin: auto;
+    margin-top: 20px;
     }
    
     
