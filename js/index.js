@@ -236,7 +236,7 @@
   }
 
   const admin = {
-    userName: "usuario2024",
+    user: "usuario2024",
     pass: "123456789",
     role: "superAdmin",
   };
