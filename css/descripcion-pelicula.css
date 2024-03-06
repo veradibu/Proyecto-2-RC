@@ -39,9 +39,57 @@ hr {
 .btn-play:hover{
     color: #0088ff;
 }
-.h2-btn{
+.movies h2{
     display: flex;
+    justify-content: center;
 }
-.color-btn-celeste{
-    color: #0088ff;
+.movies {
+    padding: 50px 0 0 0;
+    display: flex;
+    flex-direction: column;
+}
+h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.box-container-1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin: 10px 30px;
+}
+.box-1{
+    border-radius: 5px;
+    z-index: 1000;
+    display: none;
+}
+.box-1:nth-child(1),
+.box-1:nth-child(2),
+.box-1:nth-child(3),
+.box-1:nth-child(4){
+    display: inline-block;
+}
+
+.content img{
+    width: 100%;
+    margin-bottom: 15px;
+}
+.content h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.content{
+    color: #cfcfcf;
+    font-size: 20px;
+}
+
+@media (max-width:991px){
+    
+   
+    .movies{
+        padding: 30px 70px;
+    }
+   
+    
 }
