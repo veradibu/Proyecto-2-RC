@@ -154,6 +154,13 @@ window.addEventListener("scroll", function () {
     },
   ];
 
+  const peliculasLocalStorage =
+    JSON.parse(localStorage.getItem("peliculas")) || [];
+
+  if (!peliculasLocalStorage.length) {
+    localStorage.setItem("peliculas", JSON.stringify(peliculas));
+  }
+
   const pelisCategoriaSoloparati = peliculas.filter(
     (pelicula) => pelicula.categoria === "Solo para ti"
   );
