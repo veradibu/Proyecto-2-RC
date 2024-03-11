@@ -36,17 +36,17 @@ const sendFormFunction = (ev) => {
 
   if (inputUser.value && inputPass.value) {
 
-    const existUser = usersLocalStorage.find((user) => user.userName === inputUser.value);
+    const userExist= usersLocalStorage.find((user) => user.userName === inputUser.value);
     const userIndex = usersLocalStorage.findIndex(
         (user) => user.userName === inputUser.value
       );
   
 
-    if(!existUser){
+    if(!userExist){
         return alert("Usuario y/o contraseña incorrecto / USUARIO");
     }
 
-    if (inputPass.value !== existUser.pass) {
+    if (inputPass.value !== userExist.pass) {
         return alert("Usuario y/o contraseña incorrecto / CONTRASEÑA");
       }
   
@@ -91,7 +91,8 @@ const sendFormFunction2= (ev) => {
         inputMail.classList.add("is-invalid");
         divErrorMail.classList.remove("d-none");
       }
-    }
+  }
+
 
     const validarMail = (ev) => {
         const { name, value } = ev.target;
@@ -101,9 +102,8 @@ const sendFormFunction2= (ev) => {
           if (value.length > 5) {
             inputMail.classList.add("is-valid");
           }
-        }
       };
-
+    }
 
 botonRegistrar.addEventListener("click", sendFormFunction);
 botonRegistrar2.addEventListener("click", sendFormFunction2);
