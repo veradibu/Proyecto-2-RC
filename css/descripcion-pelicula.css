@@ -36,7 +36,26 @@ hr {
     cursor: pointer;
     align-self: flex-end;
 }
+.content-btn-play1{
+    display: flex;
+    justify-content: center;
+}
+.btn-play1{
+    margin-top: 40px;
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 15px;
+    border:1px solid #0088ff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    align-self: flex-end;
+    
+}
 .btn-play:hover{
+    color: #0088ff;
+}
+.btn-play1:hover{
     color: #0088ff;
 }
 .movies h2{
@@ -75,7 +94,7 @@ h2 {
     display: inline-block;
     padding: 10px 25px;
     border-radius: 15px;
-    border:1px solid blue;
+    border:1px solid #0088ff;
     color: #ffffff;
     font-size: 16px;
     cursor: pointer;
@@ -84,7 +103,7 @@ h2 {
 
 }
 .load-more:hover {
-    color: blue;
+    color: #0088ff;
 }
 
 .content img{
