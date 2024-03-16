@@ -1,0 +1,16 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  
+  background-image:linear-gradient(to left, transparent, 20%, rgb(0, 0, 0)),
+  linear-gradient(to right, transparent, 80%, rgb(0, 0, 0)), url(../img/heropage.jpg)
+  
+}
+
+.img-description{
+  
+ 
+}
+
