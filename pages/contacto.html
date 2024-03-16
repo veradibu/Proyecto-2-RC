@@ -125,24 +125,25 @@
               <form class="negrita">
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label text-white">Correo Electronico</label>
-                  <input type="email" id="txt_email" class="form-control" placeholder="nombre@dominio.com" required="True"
-                    aria-describedby="emailHelp" maxlength="50" />
+                  <input type="email" id="txt_email" class="form-control" placeholder="nombre@dominio.com" aria-describedby="emailHelp" maxlength="50" name="mail" />
+                  <div id="divErrorCorreo" class="form-text text-danger">Campo CORREO Vacio</div>
                 </div><br><br>
               
   
                 <div class="mb-3">
                 <label for="txt_comentario" class="form-label text-white">¿En que te podemos ayudar?:</label>
-                <textarea id="txt_comentario" class="form-control" required="True" maxlength="250"
-                  placeholder="Escriba su consulta" aria-describedby="comentHelp"></textarea>
+                <textarea id="txt_comentario" class="form-control" maxlength="250"
+                  placeholder="Escriba su consulta" aria-describedby="comentHelp" name="comentario"></textarea>
                 <div id="comentHelp" class="form-text text-white">
                   Escribir hasta 250 caracteres
                 </div>
+                <div id="divErrorComentario" class="form-text text-danger">Campo COMENTARIO Vacio</div>
               </div><br><br>
 
 
 
                 <div class="mb-3 d-md-flex text-center justify-content-md-center">
-                    <button class="btn btn-warning text-center text-white fw-bold" type="submit">Enviar</button>
+                    <button class="btn btn-warning text-center text-white fw-bold" type="submit" id="idSendForm" onclick="validarSiEsCorreo(form.txt_email.value)">Enviar</button>
                 </div>
                     
               </form>
