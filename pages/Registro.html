@@ -27,42 +27,44 @@
   </head>
   <body>
     <header></header>
-    <main>
+    <main class="">
       <p class="d-flex gap-1 justify-content-end m-3">
-        <button type="button" class="btn boton-color btn-lg btn-outline-dark text-light">Iniciar Sesion</button>
+        <a href="../pages/login.html"><button type="button" class="btn boton-color btn-lg btn-outline-dark text-light" >Iniciar Sesion</button></a>
       </p>
       
-      <div class="container mt-4">
-        <div class="box my-5">
+      <div class="container mt-4 justify-content-center d-flex">
+        <div class="box my-5 justify-content-md-center d-md-flex">
             <div class="container custom-form my-5">
                 <div class="justify-content-center d-flex align-items-center">
-                    <img src="../img/logo.png" alt="" class="logo" width="250vh" height="250vh">
+                    <img src="../img/logo.png" alt="" class="logo img-fluid img-thumbnail" width="250vh" height="250vh">
                 </div>
             </div>
 
-            <div class="container mt-5 d-flex justify-content-center">
-                <form class="input-tamaño text-center">
-                    <div class="mb-3">
-                        <label for="email" class="form-label text-light fw-bold">Dirección de correo electrónico</label>
-                        <input type="email" class="form-control form-control-sm" id="email" aria-describedby="emailHelp" >
-                    </div>
-                    <div class="mb-3">
-                        <label for="password" class="form-label text-light fw-bold">Contraseña</label>
-                        <input type="password" class="form-control form-control-sm" id="password">
-                    </div>
-                    <div class="mb-3">
-                        <label for="confirmPassword" class="form-label text-light fw-bold">Confirmar contraseña</label>
-                        <input type="password" class="form-control form-control-sm" id="confirmPassword" >
-                    </div>
-                    <div class="mb-3">
-                        <label for="nombre" class="form-label text-light fw-bold">Nombre</label>
-                        <input type="text" class="form-control form-control-sm" id="nombre">
+            <div class="container mt-5 d-flex justify-content-center mb-3 form-container align-items-center">
+                <form class="input-tamaño text-center align-items-center">
+                  <div class="mb-4"><label for="nombre" class="form-label text-light fw-bold">Nombre</label>
+                    <input type="text" class="form-control form-control-sm" id="nombre">
                     </div>
                     <div class="mb-3">
                       <label for="apellido" class="form-label text-light fw-bold">Apellido</label>
                       <input type="text" class="form-control form-control-sm" id="apellido" >
                     </div>
-                    <button type="submit" class="btn boton-color btn-outline-dark text-light">Registrarse</button>
+
+                    <div class="mb-4">
+                        <label for="email" class="form-label text-light fw-bold" aria-placeholder="Direccion de Correo Electronico">Dirección de correo electrónico</label>
+                        <input type="email" class="form-control form-control-sm" id="email" aria-describedby="emailHelp" >
+                    </div>
+                    <div class="mb-4">
+                        <label for="password" class="form-label text-light fw-bold">Contraseña</label>
+                        <input type="password" class="form-control form-control-sm" id="password">
+                    </div>
+                    <div class="mb-4">
+                        <label for="confirmPassword" class="form-label text-light fw-bold">Confirmar contraseña</label>
+                        <input type="password" class="form-control form-control-sm" id="confirmPassword" >
+                    </div>
+                    
+                    
+                    <a href="../pages/home.html"><button type="submit" class="btn boton-color btn-outline-dark text-light mb-4">Registrarse</button></a>
                 </form>
             </div>
         </div>

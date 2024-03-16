@@ -27,7 +27,83 @@
       crossorigin="anonymous"
     />
   </head>
-  <body class="bg-black">
+
+    <header class="header">
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+          <img src="../img/logo sin fondo.png" alt="" width="120" />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link home" aria-current="page" href="./home.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link home"
+                  aria-current="page"
+                  href="./erorr404.html"
+                  >Películas</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link home"
+                  aria-current="page"
+                  href="./erorr404.html"
+                  >Series</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link home"
+                  aria-current="page"
+                  href="./erorr404.html"
+                  >Novedades populares</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link home"
+                  aria-current="page"
+                  href="./erorr404.html"
+                  >Niños y familia</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link home"
+                  aria-current="page"
+                  href="./erorr404.html"
+                  >Explorar por idiomas</a
+                >
+              </li>
+            </ul>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link home" aria-current="page" href="#"
+                  >Cerrar Sesión</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+  <body class="bg-secondary">
     <header></header>
     <main>
         <div class="container-fluid bg-black p-0">
@@ -49,24 +125,25 @@
               <form class="negrita">
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label text-white">Correo Electronico</label>
-                  <input type="email" id="txt_email" class="form-control" placeholder="nombre@dominio.com" required="True"
-                    aria-describedby="emailHelp" maxlength="50" />
+                  <input type="email" id="txt_email" class="form-control" placeholder="nombre@dominio.com" aria-describedby="emailHelp" maxlength="50" name="mail" />
+                  <div id="divErrorCorreo" class="form-text text-danger">Campo CORREO Vacio</div>
                 </div><br><br>
               
   
                 <div class="mb-3">
                 <label for="txt_comentario" class="form-label text-white">¿En que te podemos ayudar?:</label>
-                <textarea id="txt_comentario" class="form-control" required="True" maxlength="250"
-                  placeholder="Escriba su consulta" aria-describedby="comentHelp"></textarea>
+                <textarea id="txt_comentario" class="form-control" maxlength="250"
+                  placeholder="Escriba su consulta" aria-describedby="comentHelp" name="comentario"></textarea>
                 <div id="comentHelp" class="form-text text-white">
                   Escribir hasta 250 caracteres
                 </div>
+                <div id="divErrorComentario" class="form-text text-danger">Campo COMENTARIO Vacio</div>
               </div><br><br>
 
 
 
                 <div class="mb-3 d-md-flex text-center justify-content-md-center">
-                    <button class="btn btn-warning text-center text-white fw-bold" type="submit">Enviar</button>
+                    <button class="btn btn-warning text-center text-white fw-bold" type="submit" id="idSendForm" onclick="validarSiEsCorreo(form.txt_email.value)">Enviar</button>
                 </div>
                     
               </form>
@@ -80,6 +157,13 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="../js/contacto.js"></script>
   </body>
 </html>
 

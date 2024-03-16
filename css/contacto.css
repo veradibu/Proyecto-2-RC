@@ -1,4 +1,35 @@
 
+navbar css:
+.header {
+  background-image: transparent;
+}
+
+.navbar {
+  width: 100%;
+  z-index: 10;
+}
+
+.home {
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 2px;
+}
+
+.home:hover {
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+@media (max-width: 991px) {
+  .navbar {
+    background-color: black;
+  }
+}
+  
   .imagen{
     margin-top: 50px;
   }
+
