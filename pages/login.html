@@ -106,14 +106,16 @@
         </div>
         <div class="modal-body">
           <div class="mb-3">
-            <label for="exampleInputEmail2" class="form-label text-white">Correo Electronico</label>
-            <input type="email" class="form-control" id="idMail" aria-describedby="emailHelp" name="mail">
-            <div id="divErrorMail" class="form-text text-danger">Campo USUARIO Vacio</div>
+            
+              <label for="exampleInputEmail2" class="form-label text-white">Correo Electronico</label>
+              <input type="email" class="form-control" id="idMail" aria-describedby="emailHelp" name="mail">
+              <div id="divErrorMail" class="form-text text-danger">Campo USUARIO Vacio</div>
+            
           </div>
          
 
           <div class="mb-3 d-md-flex text-center justify-content-md-center">  
-            <button type="submit" class="btn btn-warning" id="idSendForm2">Enviar</button> 
+            <button type="submit" class="btn btn-warning" id="idSendForm2" onclick="validarQueEsCorreo(document.getElementById('idMail').value)">Enviar</button> 
         </div>
 
         </div>

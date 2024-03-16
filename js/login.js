@@ -99,11 +99,21 @@ const sendFormFunction2= (ev) => {
         if (name === "mail") {
           divErrorMail.classList.add("d-none");
           inputMail.classList.remove("is-invalid");
-          if (value.length > 5) {
+          if (value.length > 11) {
             inputMail.classList.add("is-valid");
           }
       };
     }
+
+    const validarQueEsCorreo = (idMail) =>{
+      let expReg = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/
+      let esValido = expReg.test(idMail);
+      if(esValido == true){
+        alert("Se envio un correo electronico a la direccion de e-mail suministrada");
+      }else{
+        alert("El correo electronico NO es valido");
+      }
+      }
 
 botonRegistrar.addEventListener("click", sendFormFunction);
 botonRegistrar2.addEventListener("click", sendFormFunction2);
