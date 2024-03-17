@@ -32,7 +32,7 @@ window.addEventListener("scroll", function () {
       (pelicula) => `
   <div class='col-4 col-md-4 col-lg-2 py-3'>
     <div class="card">
-      <a href=""><img src="${pelicula.image}" class="card img-para-ti" alt="..."></a>  
+      <a href="descripcion-pelicula.html"><img src="${pelicula.image}" class="card img-para-ti" alt="..."></a>  
     </div>
   </div>
 `
@@ -44,7 +44,7 @@ window.addEventListener("scroll", function () {
       (pelicula) => `
   <div class='col-4 col-md-4 col-lg-2 py-3'>
     <div class="card">
-      <a href=""><img src="${pelicula.image}" class="card img-para-ti" alt="..."></a>  
+      <a href="descripcion-pelicula.html"><img src="${pelicula.image}" class="card img-para-ti" alt="..."></a>  
     </div>
   </div>
 `
@@ -56,7 +56,7 @@ window.addEventListener("scroll", function () {
       (pelicula) => `
   <div class='col-4 col-md-4 col-lg-2 py-3'>
     <div class="card">
-      <a href=""><img src="${pelicula.image}" class="card img-para-ti" alt="..."></a>  
+      <a href="erorr404.html"><img src="${pelicula.image}" class="card img-para-ti" alt="..."></a>  
     </div>
   </div>
 `
@@ -68,7 +68,7 @@ window.addEventListener("scroll", function () {
       (pelicula) => `
   <div class='col-4 col-md-4 col-lg-2 py-3'>
     <div class="card">
-      <a href=""><img src="${pelicula.image}" class="card img-para-ti" alt="..."></a>  
+      <a href="erorr404.html"><img src="${pelicula.image}" class="card img-para-ti" alt="..."></a>  
     </div>
   </div>
 `

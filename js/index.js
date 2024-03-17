@@ -7,7 +7,7 @@
         "Los minions están en busca de un nuevo amo malvado. Por suerte se topan con Scarlet Overkill, quien trama un plan para dominar al mundo.",
       tipo: "pelicula",
       categoria: "Solo para ti",
-      image: "../img/minions.png",
+      image: "../img/minions.pgn",
     },
     {
       id: 2,
